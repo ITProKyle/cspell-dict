@@ -1,0 +1,25 @@
+{
+    "id": "finley",
+    "name": "ITProKyle",
+    "description": "Personal dictionary of Kyle Finley (ITProKyle).",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "finley",
+            "path": "finley.txt.gz",
+            "description": "Personal dictionary of Kyle Finley (ITProKyle)."
+        }
+    ],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "*",
+            "includeRegExpList": [],
+            "ignoreRegExpList": [],
+            "patterns": [],
+            "dictionaries": ["finley"],
+            "dictionaryDefinitions": []
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+  "author": "Kyle Finley <kyle@finley.sh>",
+  "description": "Personal dictionary of Kyle Finley (ITProKyle).",
+  "devDependencies": {
+    "cspell-tools": "^5.1.1"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "files": [
+    "finley.txt.gz",
+    "cspell-ext.json"
+  ],
+  "keywords": [
+    "cspell"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "name": "@itprokyle/cspell-dict",
+  "peerDependencies": {
+    "cspell": "^7.0.0"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ITProKyle/cspell-dict.git"
+  },
+  "scripts": {
+    "build": "cspell-tools compile \"finley.txt\" -o .",
+    "test": "head -n 100 \"finley.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=finley\" stdin"
+  },
+  "version": "1.0.0"
+}

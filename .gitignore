@@ -1,0 +1,6 @@
+**/*.gz
+**/*.tgz
+**/.envrc
+**/.secrets
+**/.venv/
+**/node_modules
