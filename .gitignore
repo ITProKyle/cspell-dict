@@ -3,4 +3,5 @@
 **/.envrc
 **/.secrets
 **/.venv/
+**/dist/
 **/node_modules

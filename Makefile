@@ -12,7 +12,7 @@ help: ## show this message
 		$(MAKEFILE_LIST)
 
 build:
-	@npm run build
+	@npm run-script build
 
 fix: run-pre-commit ## run all fixes
 
@@ -24,6 +24,14 @@ fix-sort: ## automatically sort the contents of some files
 
 lint: ## run all linters
 	@echo "no linters configured"
+
+pack: build test ## create a tarball from the package
+	@rm -rf ./dist
+	@mkdir -p ./dist
+	@npm pack --pack-destination dist
+
+publish: pack ## publish the package
+	@find ./dist -name '*-cspell-dict-*.*.*.tgz' -exec npm publish --access public {} +;
 
 run-pre-commit: ## run pre-commit for all files
 	@poetry run pre-commit run $(PRE_COMMIT_OPTS) \
@@ -58,4 +66,4 @@ spellcheck: ## run cspell
 		--show-context
 
 test: ## run tests
-	@echo "no tests configured"
+	@npm run-script test
