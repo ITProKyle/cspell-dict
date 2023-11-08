@@ -4,9 +4,12 @@
 *env
 *envs
 *uuid*
+EEXIST
 MAKECMDGOALS
 MSYS
 MSYSTEM
+acmcert
+albv
 algs
 autofix
 autoupdate
@@ -41,6 +44,7 @@ deps
 devcontainer
 devcontainers
 devel*
+dietpi
 dind
 direnv
 distro
@@ -119,6 +123,7 @@ npmrc
 numprocesses
 numpy
 nvmrc
+ohmyzsh
 onboarded
 platformdirs
 printf
@@ -133,6 +138,7 @@ pyright
 pytest
 pytz
 pyupgrade
+raspberrypi
 rcfile
 recommonmark
 recreatable
@@ -142,6 +148,7 @@ rtype
 sdist
 setenv
 shellcheckrc
+shellenv
 signin
 stubber
 stubbers
@@ -157,10 +164,13 @@ tomap
 tomli
 tomlsort
 tryceratops
+turingpi
 unconfigured
 undoc
 unhashable
+unsanitized
 unseekable
+untar
 urlunparse
 venv
 venvs
