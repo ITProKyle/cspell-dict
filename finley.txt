@@ -58,6 +58,7 @@ editorconfig
 eexit
 elasticloadbalancingv
 elbv
+envops
 envrc
 epub
 esbonio
@@ -84,6 +85,7 @@ ifeq
 igittigitt
 iname
 inconsolata
+inet
 isfunction
 itprokyle
 ivar
@@ -153,6 +155,7 @@ signin
 stubber
 stubbers
 substr
+swacorp
 terminalizer
 tfenv
 tflint
