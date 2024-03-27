@@ -1,6 +1,6 @@
 *ARN*
 *ARNs
-*UUIDs*
+*UUID*
 *env
 *envs
 *uuid*
@@ -127,6 +127,7 @@ numpy
 nvmrc
 ohmyzsh
 onboarded
+pipx
 platformdirs
 printf
 purrgil
@@ -146,12 +147,15 @@ recommonmark
 recreatable
 redhat
 rglob
+rstcheck
 rtype
 sdist
+secho
 setenv
 shellcheckrc
 shellenv
 signin
+sphinxcontrib
 stubber
 stubbers
 substr
@@ -168,6 +172,8 @@ tomli
 tomlsort
 tryceratops
 turingpi
+tzlocal
+tzutc
 unconfigured
 undoc
 unhashable

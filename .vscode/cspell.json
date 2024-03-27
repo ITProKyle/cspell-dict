@@ -1,32 +1,10 @@
 {
     "allowCompoundWords": true,
     "ignorePaths": [
-        "**/.cache",
-        "**/.git/**",
-        "**/.vscode/extensions.json",
-        "**/node_modules/**",
-        "**/package-lock.json",
-        "**/package.json",
-        "**/poetry.lock"
+        "**/cspell-ext.json"
     ],
     "import": [
         "../cspell-ext.json"
-    ],
-    "language": "en",
-    "languageSettings": [
-        {
-            "allowCompoundWords": true,
-            "dictionaries": [
-                "python"
-            ],
-            "languageId": "toml"
-        },
-        {
-            "dictionaries": [
-                "bash"
-            ],
-            "languageId": "*"
-        }
     ],
     "maxNumberOfProblems": 100,
     "version": "0.2",

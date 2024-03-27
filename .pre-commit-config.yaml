@@ -17,15 +17,15 @@ repos:
           )$
       - id: pretty-format-json
         args: [--autofix, --indent, '4']
-        files: |
+        exclude: |
           (?x)^(
-            \.vscode/.*\.json
+            (.*)?(cdk|package|tsconfig|tslint).json
           )$
       - id: pretty-format-json
         args: [--autofix, --indent, '2']
         files: |
           (?x)^(
-            (.*)?package\.json
+            (.*)?(cdk|package|tsconfig|tslint).json
           )$
       - id: trailing-whitespace
       - id: mixed-line-ending
@@ -49,7 +49,7 @@ repos:
           - mdformat-gfm
           - mdformat-toc
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.38.0
+    rev: v0.39.0
     hooks:
       - id: markdownlint
         language_version: lts
