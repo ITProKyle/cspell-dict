@@ -16,8 +16,7 @@ env:
   PYTEST_ADDOPTS: --color=yes
 
 jobs:
-  pre-commit:
-    name: pre-commit
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -27,4 +26,4 @@ jobs:
           cache-dependency-path: package-lock.json
           node-version: ${{ env.NODE_VERSION }}
       - uses: ITProKyle/action-setup-python@v0.7.0
-      - run: make run-pre-commit
+      - run: make test
