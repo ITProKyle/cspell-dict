@@ -46,6 +46,8 @@ jobs:
   commit:
     needs:
       - publish
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
