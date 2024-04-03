@@ -1,0 +1,60 @@
+name: Publish Release
+
+on:
+  release:
+    types:
+      - published
+
+env:
+  FORCE_COLOR: '1'
+  NODE_VERSION: '20'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          cache: npm
+          cache-dependency-path: package-lock.json
+          node-version: ${{ env.NODE_VERSION }}
+      - run: npm ci
+      - run: npm version ${{ github.ref_name }}
+      - run: make pack
+      - uses: actions/upload-artifact@v4
+        with:
+          name: npm-pack
+          path: dist
+  publish:
+    needs:
+      - build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          registry-url: https://registry.npmjs.org
+          scope: '@itprokyle'
+      - uses: actions/download-artifact@v4
+        with:
+          name: npm-pack
+          path: dist
+      - run: find ./dist -name '*-cspell-dict-*.*.*.tgz' -exec npm publish --access public {} +
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+  commit:
+    needs:
+      - publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - run: npm version ${{ github.ref_name }}
+      - uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
+          message: bump version to ${{ github.ref_name }}
+          tag: ${{ github.ref_name }} --force
+          tag_push: --force
