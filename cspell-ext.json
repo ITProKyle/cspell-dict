@@ -20,6 +20,7 @@
     "ignorePaths": [
         "**/.cache",
         "**/.git",
+        "**/.gitignore",
         "**/.terraform.lock.hcl",
         "**/.venv/**",
         "**/.vscode/cspell.json",

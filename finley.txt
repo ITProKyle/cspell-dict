@@ -11,7 +11,9 @@ MSYSTEM
 acmcert
 albv
 algs
+astext
 autofix
+autolabeler
 autoupdate
 awacs
 awscli
@@ -104,6 +106,7 @@ kustomize
 kustomized
 libc
 licences
+linenodiv
 localtoc
 maint
 markexpr
@@ -130,6 +133,7 @@ onboarded
 pipx
 platformdirs
 printf
+psutil
 purrgil
 pycache
 pydantic
