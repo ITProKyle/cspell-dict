@@ -1,5 +1,5 @@
 # https://github.com/release-drafter/release-drafter
-autolabeler:  # cspell:ignore autolabeler
+autolabeler:
   - label: bug
     branch: [/^(bug|bugfix|fix|hotfix)\/.*/]
   - label: changelog:skip
