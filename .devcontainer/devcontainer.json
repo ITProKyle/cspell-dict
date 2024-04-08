@@ -1,0 +1,18 @@
+{
+    "customizations": {
+        "codespaces": {
+            "openFiles": [
+                "finley.txt"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers-contrib/features/poetry:2": {},
+        "ghcr.io/devcontainers/features/node:1": {},
+        "ghcr.io/jungaretti/features/make:1": {},
+        "ghcr.io/prulloac/devcontainer-features/chezmoi:1": {}
+    },
+    "image": "mcr.microsoft.com/devcontainers/python:3.12",
+    "postCreateCommand": "chezmoi init ITProKyle",
+    "postStartCommand": "chezmoi update; chezmoi init --apply; make setup"
+}

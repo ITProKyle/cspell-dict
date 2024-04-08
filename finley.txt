@@ -93,6 +93,7 @@ itprokyle
 ivar
 jquery
 jsonpickle
+jungaretti
 kbenv
 kube*
 kubeconfig
@@ -133,6 +134,7 @@ onboarded
 pipx
 platformdirs
 printf
+prulloac
 psutil
 purrgil
 pycache
