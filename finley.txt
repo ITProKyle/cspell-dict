@@ -4,10 +4,14 @@
 *env
 *envs
 *uuid*
+CFLAGS
+CPPFLAGS
 EEXIST
+LDFLAGS
 MAKECMDGOALS
 MSYS
 MSYSTEM
+XCRUN
 acmcert
 albv
 algs
@@ -89,6 +93,7 @@ iname
 inconsolata
 inet
 isfunction
+iterm
 itprokyle
 ivar
 jquery
@@ -167,6 +172,7 @@ stubber
 stubbers
 substr
 swacorp
+tcltk
 terminalizer
 tfenv
 tflint
