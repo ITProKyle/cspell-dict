@@ -131,6 +131,7 @@ numpy
 nvmrc
 ohmyzsh
 onboarded
+pihole
 pipx
 platformdirs
 printf
@@ -176,6 +177,7 @@ todos
 tomap
 tomli
 tomlsort
+truenas
 tryceratops
 turingpi
 tzlocal
