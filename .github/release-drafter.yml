@@ -3,9 +3,9 @@ autolabeler:
   - label: bug
     branch: [/^(bug|bugfix|fix|hotfix)\/.*/]
   - label: changelog:skip
-    branch: [/^(dependabot)\/.*/]
+    branch: [/^(dependabot)\/.*/, /^pre-commit-ci-update-config/]
   - label: dependencies
-    branch: [/^(depend|dependabot|renovate)\/.*/]
+    branch: [/^(depend|dependabot|renovate)\/.*/, /^pre-commit-ci-update-config/]
   - label: documentation
     branch: [/^(docs)\/.*/]
   - label: feature
@@ -19,7 +19,7 @@ autolabeler:
       - '**/package-lock.json'
       - '**/package.json'
   - label: maintenance
-    branch: [/^(chore|maint|maintain|maintenance)\/.*/]
+    branch: [/^(chore|maint|maintain|maintenance)\/.*/, /^pre-commit-ci-update-config/]
   - label: changelog:patch
     branch: [/^(bug|bugfix|fix|hotfix)\/.*/]
   - label: poetry
