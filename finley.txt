@@ -4,10 +4,14 @@
 *env
 *envs
 *uuid*
+CFLAGS
+CPPFLAGS
 EEXIST
+LDFLAGS
 MAKECMDGOALS
 MSYS
 MSYSTEM
+XCRUN
 acmcert
 albv
 algs
@@ -89,6 +93,7 @@ iname
 inconsolata
 inet
 isfunction
+iterm
 itprokyle
 ivar
 jquery
@@ -131,6 +136,7 @@ numpy
 nvmrc
 ohmyzsh
 onboarded
+pihole
 pipx
 platformdirs
 printf
@@ -166,6 +172,7 @@ stubber
 stubbers
 substr
 swacorp
+tcltk
 terminalizer
 tfenv
 tflint
@@ -176,6 +183,7 @@ todos
 tomap
 tomli
 tomlsort
+truenas
 tryceratops
 turingpi
 tzlocal
