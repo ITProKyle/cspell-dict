@@ -13,14 +13,19 @@ MSYS
 MSYSTEM
 XCRUN
 acmcert
+agnoster
 albv
 algs
 astext
+atuin
 autofix
 autolabeler
+autopydantic
 autoupdate
 awacs
 awscli
+bashcompinit
+bashunit
 boto*
 botocore
 buildargs
@@ -68,7 +73,9 @@ envops
 envrc
 epub
 esbonio
+evalcache
 fgrep
+filein
 findutils
 forcerm
 fqdns
@@ -81,8 +88,11 @@ getuid
 ghac
 githubs
 hadolint
+hashextra
 hashicorp
 helmenv
+helmfile
+helmfilenv
 hore
 howto
 hzone
@@ -125,6 +135,7 @@ mktime
 moto
 mypy
 netaddr
+nmap
 nocache
 nochange
 nocheck
@@ -139,6 +150,7 @@ onboarded
 pihole
 pipx
 platformdirs
+pnpm
 printf
 prulloac
 psutil
@@ -164,9 +176,11 @@ rtype
 sdist
 secho
 setenv
+setopt
 shellcheckrc
 shellenv
 signin
+skel
 sphinxcontrib
 stubber
 stubbers
@@ -208,3 +222,6 @@ xvda
 xvzf
 yamldecode
 yamlfmt
+yubico
+yubikey
+zstyle
