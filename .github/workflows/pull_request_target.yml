@@ -6,15 +6,3 @@ on:
 jobs:
   workflows:
     uses: finleyfamily/workflows/.github/workflows/pull_request_target.yml@master
-  label-pr:
-    name: Label PR
-    permissions:
-      contents: write
-      pull-requests: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: release-drafter/release-drafter@v6
-        with:
-          disable-releaser: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
