@@ -27,6 +27,12 @@ jobs:
       - uses: ITProKyle/action-setup-python@v1.0.0
       - run: make setup-npm build test
   spellcheck:
-    uses: finleyfamily/workflows/.github/workflows/spellcheck.yml@master
-    with:
-      node-version: '20'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - run: make setup-npm
+      - run: make build
+      - run: make spellcheck
