@@ -1,6 +1,6 @@
 # cspell-dict
 
-![npm](https://img.shields.io/npm/v/%40itprokyle%2Fcspell-dict)
+[![npm](https://img.shields.io/npm/v/%40itprokyle%2Fcspell-dict)](https://www.npmjs.com/package/@itprokyle/cspell-dict)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 [![renovate](https://img.shields.io/badge/enabled-brightgreen?logo=renovatebot&logoColor=%2373afae&label=renovate)](https://developer.mend.io/github/ITProKyle/cspell-dict)
 
