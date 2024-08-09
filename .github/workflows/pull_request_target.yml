@@ -1,19 +1,11 @@
-name: PR Target (opened)
-
+name: pull_request_target
 
 on:
-  pull_request:
-    types:
-      - opened
-      - reopened
+  pull_request_target:
 
 jobs:
-  assign-author:
-    name: Assign Author to PR
-    if: github.actor != 'dependabot[bot]'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: technote-space/assign-author@v1  # cspell:ignore technote
+  workflows:
+    uses: finleyfamily/workflows/.github/workflows/pull_request_target.yml@master
   label-pr:
     name: Label PR
     permissions:
