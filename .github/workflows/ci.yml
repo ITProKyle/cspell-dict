@@ -1,4 +1,4 @@
-name: default
+name: CI
 
 on:
   pull_request:  # any pull request

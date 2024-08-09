@@ -1,4 +1,5 @@
 {
+    "allowCompoundWords": true,
     "description": "Personal dictionary of Kyle Finley (ITProKyle).",
     "dictionaries": [
         "python",

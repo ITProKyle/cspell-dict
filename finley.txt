@@ -93,6 +93,7 @@ funcs
 furo
 getuid
 ghac
+ghactions
 githubs
 gpio
 hadolint
@@ -161,6 +162,7 @@ npmrc
 numprocesses
 numpy
 nvmrc
+octocat
 ohmyzsh
 onboarded
 pihole
@@ -175,6 +177,7 @@ pwgen
 pycache
 pydantic
 pyenv
+pypa
 pypi
 pypoetry
 pyproject
@@ -201,9 +204,11 @@ shellcheckrc
 shellenv
 signin
 skel
+snyk
 sphinxcontrib
 stubber
 stubbers
+stylelintrc
 substr
 swacorp
 tcltk
