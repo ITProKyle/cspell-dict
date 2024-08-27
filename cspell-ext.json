@@ -69,5 +69,41 @@
         }
     ],
     "name": "ITProKyle",
+    "overrides": [
+        {
+            "filename": "**/{devcontainer.json,.vscode/*.json}",
+            "words": [
+                "Compulim",
+                "DavidAnson",
+                "Expt",
+                "PeterSchmalfeldt",
+                "Tyriar",
+                "bierner",
+                "eamodio",
+                "indenticator",
+                "intellicode",
+                "kohler",
+                "lextudio",
+                "mohsen",
+                "pylance",
+                "remcohaszing",
+                "snekvik",
+                "tamasfe",
+                "trond",
+                "vscodeintellicode",
+                "yzhang"
+            ]
+        },
+        {
+            "filename": "**/.github/workflows/*.json",
+            "words": [
+                "brpaz",
+                "dorny",
+                "frenck",
+                "ludeeus",
+                "technote"
+            ]
+        }
+    ],
     "readonly": true
 }
