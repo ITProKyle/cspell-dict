@@ -37,15 +37,18 @@ buildx
 bysource
 capfd
 certifi
+cfngin
 cfnresponse
 chardet
 chdir
 chezmoi
+chflags
 cmds
 cname
 codecov
 codelyzer
 collab
+commitish
 concat
 configurability
 coveragerc
@@ -55,6 +58,7 @@ ctypes
 datetimez
 dateutil
 dedupe
+deduped
 delenv
 dependabot
 deps
@@ -84,6 +88,7 @@ evalcache
 fgrep
 filein
 findutils
+fira
 forcerm
 fqdns
 frontmatter
@@ -140,6 +145,7 @@ maint
 markexpr
 maxlevel
 mccab
+mdfind
 mdformat
 mgmt
 minlevel
@@ -147,6 +153,7 @@ mktime
 mosquitto
 moto
 mqtt
+mtune
 mypy
 ncurse
 ndjson
@@ -164,7 +171,9 @@ numpy
 nvmrc
 octocat
 ohmyzsh
+omzsh
 onboarded
+osascript
 pihole
 pipx
 platformdirs
@@ -253,4 +262,5 @@ yamldecode
 yamlfmt
 yubico
 yubikey
+zshrcd
 zstyle
