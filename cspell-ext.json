@@ -71,7 +71,7 @@
     "name": "ITProKyle",
     "overrides": [
         {
-            "filename": "**/{devcontainer.json,.vscode/*.json}",
+            "filename": "**/{.devcontainer.json,.vscode/*.json,devcontainer.json,devcontainer-template.json}",
             "words": [
                 "Compulim",
                 "DavidAnson",
