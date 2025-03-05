@@ -24,7 +24,7 @@ jobs:
           cache: npm
           cache-dependency-path: package-lock.json
           node-version: ${{ env.NODE_VERSION }}
-      - uses: finleyfamily/action-setup-python@v1.1.0
+      - uses: finleyfamily/action-setup-python@v1.2.0
       - run: make setup-npm build test
   spellcheck:
     runs-on: ubuntu-latest
