@@ -2,7 +2,7 @@
   "author": "Kyle Finley <kyle@finley.sh>",
   "description": "Personal dictionary of Kyle Finley (ITProKyle).",
   "devDependencies": {
-    "cspell-tools": "^8.18.0"
+    "cspell-tools": "^8.18.1"
   },
   "exports": {
     ".": "./cspell-ext.json",
