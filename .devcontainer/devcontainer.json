@@ -12,7 +12,7 @@
         "ghcr.io/jungaretti/features/make:1": {},
         "ghcr.io/prulloac/devcontainer-features/chezmoi:1": {}
     },
-    "image": "mcr.microsoft.com/devcontainers/python:3.13@sha256:11690b54090a0a649321728d5f278288b3bab1b45c37218a715ee63f5716e546",
+    "image": "mcr.microsoft.com/devcontainers/python:3.13@sha256:8cd47e701aa9beb5fa775e832670bcf26d3511762d07fdcabd483f9cb69b5e76",
     "postCreateCommand": "chezmoi init ITProKyle",
     "postStartCommand": "chezmoi update; chezmoi init --apply; make setup"
 }
