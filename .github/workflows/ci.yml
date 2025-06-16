@@ -25,7 +25,7 @@ jobs:
           cache-dependency-path: package-lock.json
           node-version: ${{ env.NODE_VERSION }}
       - uses: finleyfamily/action-setup-python@v1.2.0
-      - run: make setup-npm build test
+      - run: make setup.npm build test
   spellcheck:
     runs-on: ubuntu-latest
     steps:
@@ -33,6 +33,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-      - run: make setup-npm
+      - run: make setup.npm
       - run: make build
       - run: make spellcheck
