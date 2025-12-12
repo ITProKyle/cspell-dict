@@ -46,7 +46,7 @@ jobs:
           registry-url: https://registry.npmjs.org
           scope: '@itprokyle'
       - name: ⤵️ Download distribution artifact
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v7
         with:
           name: npm-pack
           path: dist
