@@ -76,7 +76,7 @@ jobs:
       - name: 🏗 Set 📦 version
         run: npm version ${{ github.ref_name }}
       - name: ⤴️ Commit version change
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           default_author: github_actions
           message: bump version to ${{ github.ref_name }}
